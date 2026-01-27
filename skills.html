@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SKILLS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		<style>
+			*{
+				margin:0;
+				box-sizing: border-box;
+				font-family:  Arial, sans-serif;
+			}
+			body{
+				font-family: Arial, sans-serif;
+        background-color: #f2f2f2; 
+        color: #333;
+			}
+			nav{
+				margin:0px 0 3px 0;
+				padding:10px 5px;
+				border:1px solid black;
+				width:100%;
+				background:white;
+				background-color: #2c3e50;
+				position:fixed;
+				z-index: 9999;
+			}
+			.logo{
+				margin:0 4px;
+				color: #ecf0f1;
+			}
+			span{
+				float:right;
+			}
+			span a{
+				padding:0 10px;
+				text-decoration: none;
+				color: #ecf0f1;
+			}
+			span a:hover{
+				color: #1abc9c;
+				transition:0.2s;
+				cursor:pointer;
+			}
+			.all{
+				max-width:400px;
+				border:none;
+				padding:38px 3px;
+			}
+			.head{
+				padding:9px 5px;
+				font-size:1.2rem;
+			}
+			.heading{
+				margin:4px 0 2px 0;
+				padding:0px 5px;
+				font-weight:bold;
+			}
+			.grid{
+				display:grid;
+				grid-template-columns: repeat(3, 1fr);
+				padding:0px 5px;
+				width:100%;
+			}
+			.child1 img{
+                margin:15px 0 0 0;
+				border:1px solid black;
+				height:90px;
+				position:relative;
+				animation:slide 1s;
+				z-index: 1;
+			}
+			@keyframes slide{
+				0%{
+					transform: translateX(-100vw);
+				}
+				100%{
+					transform: translateX(0);
+				}
+			}
+			.child2 img{
+                margin:15px 0 0 0;
+				border:1px solid black;
+				height:90px;	
+			}
+			.details{
+				padding:10px 7px 7px 0;
+				line-height:29px;
+			}
+			.details::first-letter{
+				font-weight:bold;
+				font-size:1.5rem;
+			}
+			.child3 img{
+				border:1px solid black;
+				margin:15px 0 0 0;
+				height:90px;
+				position:relative;
+				z-index: 1;
+				animation:right 1s;
+			}
+			@keyframes right{
+				0%{
+					transform: translate(100vw);
+				}
+				100%{
+					transform: translateX(0);
+				}
+			}
+			.up{
+				text-decoration:none;
+			}
+			.navigation{
+				background:#2c3e50;
+				color:white;
+				border:1px solid #2c3e50;
+				transition: all 0.3s ease;
+			  cursor: pointer;
+			  padding:10px;
+			  width:120px;
+			  box-shadow: 0 0 10px rgb(0,0,0,0.2);
+				transition: all 0.3s ease;
+			}
+			.navigation:hover{
+				background-color: #1abc9c;
+				border-radius:13px;
+				color: #2c3e50;  
+				box-shadow: 0 6px 12px rgba(0,0,0,0.3);  
+				transform: scale(1.05);
+				cursor: pointer;
+				font-weight: bold;
+				transition:0.4s;
+			}
+			@media screen and (max-width: 370px) {
+                .grid {
+                 grid-template-columns: 1fr; 
+            }
+        }
+
+			@media screen  and (min-width:401px){
+				.all{
+					max-width:none;
+				}
+				.child1 img, .child2 img, .child3 img{
+				width:70%;
+				height:120px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<nav id="top">
+		<a class="logo">OM </a>
+			<span>
+		        <a href="index.html">HOME</a>
+			    <a href="contact.html">CONTACT</a>
+			</span>
+		</nav>
+		<div class="all">
+			<p class="head">As a Web Developer, I possess a diverse set of skills that enable me to craft innovative digital solutions. <br /> Here are some of my Key Skills:</p>
+			<section class="heading">FRONT-END DEVELOPMENT :</section>
+			<div class="grid">
+				<div class="child1"><img src="htmllogo.jpeg" alt="html logo" />
+				</div>
+				<div class="child2"><img src="csslogo.jpeg" alt="css logo" /></div>
+				<div class="child3"><img src="javascriptlogo.jpeg" alt="java script" image="loading" /></div>
+				<div class="details">Hyper Text Mark-Up Language (HTML).For structured and organized content.</div>
+				<div class="details">Cascading Style Sheet (CSS).For styling and layout for visually appealing interfaces.</div>
+				<div  class="details">Java Script (JS). Dynamic client-side scripting for interactive experiences.</div>
+			</div>
+			<section class="heading">BACK-END DEVELOPMENT :</section>
+			<div class="grid">
+				<div class="child1"><img src="mysqllogo.webp" alt="mysql logo" /></div>
+				<div class="child2"><img src="php.png" alt="php logo" /></div>
+				<div class="child3"></div>
+				<div class="details">My Structured Query Language (MYSQL).For storing,managing and retrieving structured data.</div>
+				<div class="details">Hypertext Preprocessor (PHP).A server-side scripting language for dynamic development.</div>
+			</div>
+			<a href="#top" class="up"><button class="navigation">back to top</button></a>
+		</div>
+	</body>
+	</html>
